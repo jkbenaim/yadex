@@ -93,9 +93,9 @@ u8      *buf;	/* This variable is set to point to the element of
 		   should be pasted. It can be off the image buffer! */
 
 // Locate the lump where the picture is
+MasterDirectory dirbuf;
 if (picloc.wad != 0)
    {
-   MasterDirectory dirbuf;
    dirbuf.wadfile   = picloc.wad;
    dirbuf.dir.start = picloc.ofs;
    dirbuf.dir.size  = picloc.len;

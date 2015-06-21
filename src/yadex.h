@@ -56,6 +56,7 @@ Place, Suite 330, Boston, MA 02111-1307, USA.
 #include <ctype.h>
 #include <limits.h>
 #include <errno.h>
+#include <inttypes.h>
 #ifdef Y_DOS
 #include <alloc.h>
 #include <dos.h>
@@ -87,22 +88,22 @@ Place, Suite 330, Boston, MA 02111-1307, USA.
 /*
  *	Platform-independant types and formats.
  */
-typedef unsigned char  u8;
-typedef signed   char  i8;
+typedef uint8_t  u8;
+typedef int8_t   i8;
 
-typedef unsigned short u16;
+typedef uint16_t u16;
 #define F_U16_D "hu"
 #define F_U16_H "hX"
 
-typedef signed   short i16;
+typedef int16_t  i16;
 #define F_I16_D "hd"
 #define F_I16_H "hX"
 
-typedef unsigned long  u32;
+typedef uint32_t  u32;
 #define F_U32_D "lu"
 #define F_U32_H "lX"
 
-typedef signed   long  i32;
+typedef int32_t   i32;
 #define F_I32_D "ld"
 #define F_I32_H "lX"
 

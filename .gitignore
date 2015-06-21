@@ -28,8 +28,13 @@
 *.app
 
 # yadex-specific things
+yadex.dep
 obj/
 dobj/
 doc/
 src/config.cc
 src/config.h
+src/version.cc
+cache/
+
+*.kate-swp
