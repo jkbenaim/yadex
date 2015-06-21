@@ -27,5 +27,9 @@
 *.out
 *.app
 
-# obj directory
+# yadex-specific things
 obj/
+dobj/
+doc/
+src/config.cc
+src/config.h
