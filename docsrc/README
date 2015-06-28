@@ -1,4 +1,11 @@
-Patches against Yadex 1.7.0.
+Patches against Yadex 1.7.0, by jkbenaim.
+Mostly bugfixes. Also, the function for adding new objects has been moved to 
+the F key, instead of the insert key.
+
+The makefile's dependencies are not correct; building seems to fail if you have 
+make use multiple simultaneous jobs (e.g. make -jN). In particular, you may need 
+to manually make src/config.h. Tested to work on Linux (x64 and ppc) and OSX 
+(tested on ppc only).
 
 The original README:
 
